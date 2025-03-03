@@ -1,0 +1,15 @@
+Unloading intel-oneapi-compilers/2021.4.0
+  Unloading dependent: intel-mpi/2019-intel
+Loading python/3.7.11-base
+  ERROR: Module cannot be loaded due to a conflict.
+    HINT: Might try "module unload python" first.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[i07r05c03s04:1540903] 92 more processes have sent help message help-mpi-api.txt / mpi-abort
+[i07r05c03s04:1540903] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

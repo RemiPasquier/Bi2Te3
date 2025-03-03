@@ -1,0 +1,14 @@
+
+ *** Local logger file of MPI task 73 in communicator 0 ***
+ *** PID      = 1939185
+ *** Hostname = i02r08c05s12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+ ===== Routine Calling Stack ===== 
+
+            7 build_neighbor_lists
+            6 build_fist_neighbor_lists
+            5 topology_generate_bond_3
+            4 topology_generate_bond
+            3 connectivity_control
+            2 topology_control
+            1 CP2K
