@@ -6,7 +6,7 @@
 #SBATCH -J "Bi2Te3"
 #SBATCH -D ./
 #SBATCH --account=pn36zo
-#SBATCH --partition=general
+#SBATCH --partition=fat
 
 #module purge
 module unload intel-oneapi-compilers
