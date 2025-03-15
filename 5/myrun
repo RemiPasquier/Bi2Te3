@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -t 48:00:00
+#SBATCH --ntasks-per-node=8
+#SBATCH -c 16
+#SBATCH -N 16
+#SBATCH -J "5Bi2Te3"
+#SBATCH --account=hpc-prf-optgw
+#SBATCH -p normal
+##SBATCH -q express
+
+export OMP_NUM_THREADS=16
+export OMP_PLACES=cores
+export OMP_PROC_BIND=true
+
+module purge
+module load chem/CP2K/2024.1-foss-2023b-gcc-openmpi-openblas-libgrpp
+
+rm cp2k.out
+srun /pc2/groups/hpc-prf-metdyn/metdyn02_Remi/cp2k/test/cp2k/exe/local/cp2k.psmp *inp >> cp2k.out

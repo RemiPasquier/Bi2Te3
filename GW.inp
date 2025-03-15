@@ -67,7 +67,7 @@
 !        CUTOFF_RADIUS_RI            7.0
 !      &END
       &SOC
-	ENERGY_WINDOW 100
+	ENERGY_WINDOW 10
       &END
       &BANDSTRUCTURE_PATH
         NPOINTS 159
